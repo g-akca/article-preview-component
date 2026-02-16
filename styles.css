@@ -32,7 +32,6 @@ body {
     min-height: 280px;
     display: flex;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 50%);
 }
 
@@ -41,6 +40,8 @@ body {
     width: 40%;
     object-fit: cover;
     object-position: left center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #card-content {
@@ -49,6 +50,7 @@ body {
     flex-direction: column;
     gap: var(--spacing-300);
     padding: var(--spacing-400) var(--spacing-500);
+    border-radius: 10px;
 }
 
 #card-content p {
