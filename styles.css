@@ -1,0 +1,16 @@
+:root {
+    --spacing-0: 0px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-700: 56px;
+    --spacing-800: 64px;
+    --spacing-1300: 104px;
+    --spacing-2000: 160px;
+    --grey-900: #48556A;
+    --grey-500: #6E8098;
+    --grey-400: #9DAEC2;
+    --grey-200: #ECF2F8;
+}
