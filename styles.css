@@ -1,14 +1,9 @@
 :root {
-    --spacing-0: 0px;
     --spacing-200: 16px;
     --spacing-300: 24px;
     --spacing-400: 32px;
     --spacing-500: 40px;
-    --spacing-600: 48px;
-    --spacing-700: 56px;
-    --spacing-800: 64px;
-    --spacing-1300: 104px;
-    --spacing-2000: 160px;
+    --spacing-1100: 88px;
     --grey-900: #48556A;
     --grey-500: #6E8098;
     --grey-400: #9DAEC2;
@@ -22,7 +17,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 0 var(--spacing-300);
+    padding: 0 var(--spacing-1100);
     font-family: "Manrope", sans-serif;
 }
 
@@ -50,7 +45,8 @@ body {
     flex-direction: column;
     gap: var(--spacing-300);
     padding: var(--spacing-400) var(--spacing-500);
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #card-content p {
@@ -69,7 +65,6 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 140%;
-    letter-spacing: 0.12%;
     color: var(--grey-500);
 }
 
@@ -96,7 +91,6 @@ body {
     font-weight: 700;
     font-size: 13px;
     line-height: 140%;
-    letter-spacing: 0.12%;
     color: var(--grey-900);
 }
 
@@ -104,7 +98,6 @@ body {
     font-weight: 400;
     font-size: 13px;
     line-height: 140%;
-    letter-spacing: 0.12%;
     color: var(--grey-400);
 }
 
@@ -124,11 +117,11 @@ body {
 #share-toast {
     display: none;
     position: absolute;
-    bottom: 150%;
-    right: -20%;
+    bottom: 160%;
+    right: -108px;
     align-items: center;
-    gap: 16px;
-    padding: var(--spacing-200) var(--spacing-400);
+    gap: 18px;
+    padding: 20px var(--spacing-500);
     background-color: var(--grey-900);
     border-radius: 10px;
 }
@@ -143,7 +136,7 @@ body {
     content: "";
     position: absolute;
     top: 100%;
-    right: 82px;
+    right: 112px;
     border-width: 12px;
     border-style: solid;
     border-color: var(--grey-900) transparent transparent transparent;
