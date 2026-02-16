@@ -113,6 +113,18 @@ body {
     border-radius: 50%;
 }
 
+#share-btn:hover {
+    background-color: var(--grey-900);
+    cursor: pointer;
+}
+
+#share-toast {
+    display: none;
+    position: absolute;
+    right: 700px;
+    bottom: 400px;
+}
+
 @media screen and (max-width: 768px) {
     #card-container {
         max-width: 608px;
