@@ -22,13 +22,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0 32px;
     font-family: "Manrope", sans-serif;
 }
 
 #card-container {
     box-sizing: border-box;
     max-width: 730px;
-    height: 280px;
+    min-height: 280px;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
@@ -109,4 +110,21 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #card-container {
+        max-width: 608px;
+        min-height: 346px;
+    }
+
+    #card-img {
+        width: 229px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #card-content {
+        padding: var(--spacing-500) var(--spacing-400);
+    }
 }
