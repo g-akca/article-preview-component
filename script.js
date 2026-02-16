@@ -1,9 +1,14 @@
 const shareToast = document.getElementById("share-toast");
 const shareBtn = document.getElementById("share-btn");
-
-let toastVisible = false;
+const author = document.getElementById("card-author");
 
 shareBtn.addEventListener("click", () => {
-    toastVisible ? shareToast.style.display = "none" : shareToast.style.display = "flex";
-    toastVisible = !toastVisible;
+    if (shareToast.style.display == "flex") {
+        shareToast.style.display = "none";
+        if (window.innerWidth <= 375) author.style.visibility = "visible";
+    }
+    else {
+        shareToast.style.display = "flex";
+        if (window.innerWidth <= 375) author.style.visibility = "hidden";
+    }
 });

@@ -110,7 +110,7 @@ body {
 }
 
 #share-btn:hover {
-    background-color: var(--grey-900);
+    background-color: var(--grey-500);
     cursor: pointer;
 }
 
@@ -159,6 +159,10 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+    body {
+        padding: 0 var(--spacing-300);
+    }
+
     #card-container {
         min-height: 538px;
         flex-direction: column;
@@ -175,5 +179,22 @@ body {
 
     #card-footer {
         margin-top: var(--spacing-300);
+    }
+
+    #share-toast {
+        bottom: -16px;
+        left: -32px;
+        right: -32px;
+        justify-content: flex-start;
+        padding: 26px var(--spacing-300);
+        border-radius: 0 0 10px 10px;
+    }
+
+    #share-toast::after {
+       display: none;
+    }
+
+    #share-btn {
+        z-index: 1;
     }
 }
