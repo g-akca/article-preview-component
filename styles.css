@@ -75,6 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #card-author {
@@ -121,8 +122,29 @@ body {
 #share-toast {
     display: none;
     position: absolute;
-    right: 700px;
-    bottom: 400px;
+    bottom: 150%;
+    right: -20%;
+    align-items: center;
+    gap: 16px;
+    padding: var(--spacing-200) var(--spacing-400);
+    background-color: var(--grey-900);
+    border-radius: 10px;
+}
+
+#share-toast p {
+    color: var(--grey-400);
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+#share-toast::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 82px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--grey-900) transparent transparent transparent;
 }
 
 @media screen and (max-width: 768px) {
