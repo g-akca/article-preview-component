@@ -140,7 +140,7 @@ body {
     border-color: var(--grey-900) transparent transparent transparent;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
     #card-container {
         max-width: 608px;
         min-height: 346px;
@@ -156,13 +156,14 @@ body {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     body {
         padding: 0 var(--spacing-300);
     }
 
     #card-container {
         min-height: 538px;
+        max-width: 450px;
         flex-direction: column;
     }
 
